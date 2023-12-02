@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon"
+        href="https://preview.colorlib.com/theme/timezone/assets/img/logo/logo.png.webp">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <!--w3-->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css">
+    <link rel="stylesheet" href="/CSS/home.css">
+    <link rel="stylesheet" href="/CSS/productDetails.css">
+    <title>product Details</title>
+</head>
+
+<body>
+    <div class="container-fluid" id="first-container">
+        <nav class="navbar navbar-expand-sm">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="home.html"><img
+                        src="https://preview.colorlib.com/theme/timezone/assets/img/logo/logo.png.webp"
+                        class="img-fluid" alt="logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse mt-2 p-lg-1 justify-content-end" id="collapsibleNavbar">
+                    <ul class="navbar-nav text-center">
+                        <li class="nav-item mt-2">
+                            <a class="nav-link" href="home.html">Home</a>
+                        </li>
+                        <li class="nav-item mt-2">
+                            <a class="nav-link" href="shop.html">Shop</a>
+                        </li>
+                        <li class="nav-item mt-2">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <div class="badge">
+                                <span class="badge bg-danger">Hot</span>
+                            </div>
+                            <div class="dropdown mt-2">
+                                <a class=" nav-link" id="dropdownMenuButton">
+                                    Latest
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <li><a class="drop-item" href="productList.html">Product List</a></li>
+                                    <li><a class="drop-item" href="productDetails.html">Product Details</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item mt-2">
+                            <a href="blog.html" class="nav-link">Blog</a>
+                        </li>
+                        <li class="nav-item mt-2">
+                            <div class="dropdown">
+                                <a class="nav-link" id="dropdownMenuButton">
+                                    Pages
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <li><a class="drop-item" href="login.html">Login</a></li>
+                                    <li><a class="drop-item" href="cart.html">Cart</a></li>
+                                    <li><a class="drop-item" href="confirmation.html">Confirmation</a></li>
+                                    <li><a class="drop-item" href="checkout.html">Product Checkout</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item mt-2">
+                            <a class="nav-link" href="/cartlist">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="collapse navbar-collapse mt-2 p-lg-2 justify-content-end">
+                    <div class="right-content">
+                        <div class="seeach-button">
+                            <button href="" class="openBtn" onclick="openSearch()">
+                                <i class="fa fa-search" aria-hidden="true"></i>
+                            </button>
+                            <div id="myOverlay" class="overlay">
+                                <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
+                                <div class="overlay-content">
+                                    <form action="/action_page.php">
+                                        <input type="text" placeholder="Search.." class="form-control" name="search">
+                                        <button class="btn" type="submit"><i class="fa fa-search"></i></button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="text-decoration-none text-black" href="login.html">
+                            <i class="fa fa-user-o" aria-hidden="true"></i>
+                        </a>
+                        <a class="text-decoration-none text-black" href="cart.html">
+                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="container-fluid second-container">
+        <div class="container d-flex justify-content-center align-items-center">
+            <div class="productDetails-page">
+                <h1 style="font-size: 70px; font-weight: 700;">Watch Shop</h1>
+            </div>
+        </div>
+    </div>
+    <div class="container third-container">
+        <div class="slider">
+            <div class="slide">
+                <img src="https://preview.colorlib.com/theme/timezone/assets/img/gallery/gallery1.png.webp"
+                    class="img-fluid" alt="">
+            </div>
+            <div class="slide">
+                <img src="https://preview.colorlib.com/theme/timezone/assets/img/gallery/gallery1.png.webp"
+                    class="img-fluid" alt="">
+            </div>
+            <div class="slide">
+                <img src="https://preview.colorlib.com/theme/timezone/assets/img/gallery/gallery01.png.webp" alt=""
+                    class="img-fluid">
+            </div>
+        </div>
+    </div>
+    <div class="container forth-container">
+        <div class="product-detail d-flex justify-content-center">
+            <div class="product text-center w-50">
+                <h1 class="display-6">Foam filling cotton slow
+                    rebound pillows</h1>
+                <p>Seamlessly empower fully researched growth strategies and interoperable internal or “organic”
+                    sources.
+                    Credibly innovate granular internal or “organic” sources whereas high standards in web-readiness.
+                    Credibly innovate granular internal or organic sources whereas high standards in web-readiness.
+                    Energistically scale future-proof core competencies vis-a-vis impactful experiences. Dramatically
+                    synthesize integrated schemas. with optimal networks.</p>
+            </div>
+        </div>
+        <div class="quantity d-flex justify-content-center align-items-center">
+            <div class="quantity" style="opacity: .5;">
+                <h6>Quantity</h6>
+            </div>
+            <div class="form d-flex justify-content-center align-items-center">
+                <div class="quantity-controller">
+                    <button class="btn" id="add" onclick="increase()">+</button>
+                    <input type="text" name="number" id="number" class="amount" value="1" readonly>
+                    <button class="btn" id="subtract" onclick="decrease()">-</button>
+                </div>
+            </div>
+            <div class="price" style="opacity: .5;">
+                <h6>$5</h6>
+            </div>
+        </div>
+        <div class="add-to-cart d-flex justify-content-center">
+            <button class="btn add-to-cart">Add To cart</button>
+        </div>
+    </div>
+    <div class="container-fluid fifth-container">
+        <div class="promotion">
+            <div class="promo-info text-center text-light w-50">
+                <h1 class="text-light fw-bold">Get promotions & updates!
+                </h1>
+                <p>Seamlessly empower fully researched growth strategies and interoperable internal or “organic” sources credibly innovate granular internal .
+                </p>
+            </div>
+        </div>
+        <form action="sub" class="sub-form">
+            <div class="form-group text-light d-flex justify-content-center overflow-hidden">
+                <input type="email" id="email" name="email" class="form-control" placeholder="Enter Your Email">
+                <button class="btn" type="submit">Subscribe</button>
+            </div>
+        </form>
+    </div>
+    <div class="container-fluid" id="footer-container">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-sm-6 mt-5">
+                    <img src="https://preview.colorlib.com/theme/timezone/assets/img/logo/logo.png.webp"
+                        class="img-fluid" alt="logo">
+                    <p class="mt-5" style="opacity: .8;">Asorem ipsum adipolor sdit amet, consectetur adipisicing elitcf sed do eiusmod tem.
+                    </p>
+                </div>
+                <div class="col-lg-3 col-sm-6 mt-4">
+                    <h3 class="text-start p-3">Quick Links</h3>
+                    <ul class="list-group footer-list">
+                        <li class="list-group-item">About</li>
+                        <li class="list-group-item">Offers & Discounts</li>
+                        <li class="list-group-item">Get Coupon</li>
+                        <li class="list-group-item">Contact Us</li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-sm-6 mt-4">
+                    <h3 class="text-start p-3">New Products
+                    </h3>
+                    <ul class="list-group footer-list">
+                        <li class="list-group-item">Woman Cloth</li>
+                        <li class="list-group-item">Fashion Accessories</li>
+                        <li class="list-group-item">Man Accessories</li>
+                        <li class="list-group-item">Rubber made Toys</li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-sm-6 mt-4">
+                    <h3 class="text-start p-3">Support</h3>
+                    <ul class="list-group footer-list">
+                        <li class="list-group-item">Frequently Asked Questions
+                        </li>
+                        <li class="list-group-item">Terms & Conditions
+                        </li>
+                        <li class="list-group-item">Privacy Policy
+                        </li>
+                        <li class="list-group-item">Report a Payment Issue
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <p class="mt-5">Copyright ©2023 All rights reserved</p>
+        </div>
+    </div>
+    <div class="container" id="social-container">
+        <div class="social-icons">
+            <a href="#" target="_blank" class="fa fa-facebook"><span class="sr-only">Facebook</span></a>
+            <a href="#" target="_blank" class="fa fa-twitter"><span class="sr-only">Twitter</span></a>
+            <a href="#" target="_blank" class="fa fa-instagram"><span class="sr-only">Instagram</span></a>
+            <a href="#" target="_blank" class="fa fa-youtube"><span class="sr-only">YouTube</span></a>
+        </div>
+    </div>
+    <script src="/Script/script.js"></script>
+</body>
+</html>

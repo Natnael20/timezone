@@ -34,12 +34,17 @@ body {
 h1,h2,h3,h4,h5,h6 {
     font-family: "Josefin Sans",sans-serif;
     color: #0b1c39;
-    margin-top: 0px;
     font-style: normal;
     font-weight: 500;
-    text-transform: normal;
 }
 /*navbar*/
+#first-container {
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    background-color: #fff;
+}
+
 .nav-link{
     font-family: "Josefin Sans",sans-serif;
     font-size: 16px;
@@ -60,7 +65,6 @@ h1,h2,h3,h4,h5,h6 {
 .drop-item {
     line-height: normal;
     text-decoration: none;
-    color: #000;
     margin-left: 10px;
     font-family: "Josefin Sans",sans-serif;
     font-size: 16px;
@@ -82,11 +86,15 @@ h1,h2,h3,h4,h5,h6 {
 .badge span {
     font-size: .7rem;
     height: auto;
-
 }
 
 .dropdown-menu {
     border-top: 3px solid red;
+}
+
+.nav-link:hover, .drop-item:hover{
+    color: #ff2020;
+    transition: all .3s ease-in-out;
 }
 
 .right-content {
@@ -95,10 +103,84 @@ h1,h2,h3,h4,h5,h6 {
     align-items: center;
 }
 
-.nav-link:hover, .drop-item:hover{
-    color: #ff2020;
-    transition: all .3s ease-in-out;
+.right-content a i:hover {
+    color: var(--red);
 }
+
+.openBtn {
+    background-color: inherit;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .openBtn i:hover {
+    color: var(--red);
+  }
+  
+  .overlay {
+    height: 100%;
+    width: 100%;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+  }
+  
+  .overlay-content {
+    position: relative;
+    top: 46%;
+    width: 80%;
+    text-align: center;
+    margin-top: 30px;
+    margin: auto;
+  }
+  
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 48%;
+    font-size: 60px;
+    cursor: pointer;
+    color: white;
+  }
+  
+  .overlay .closebtn:hover {
+    color: #ccc;
+  }
+  
+  .overlay input[type=text] {
+    padding: 15px;
+    font-size: 17px;
+    border: none;
+    float: left;
+    border-radius: 0%;
+    width: 80%;
+    border: none;
+    border-bottom: 1px solid white;
+  }
+
+  
+  .overlay input[type=text]:hover {
+    background: #f1f1f1;
+  }
+  
+  .overlay button {
+    float: left;
+    width: 15%;
+    padding: 15px;
+    font-size: 17px;
+    border: none;
+    border-radius: 0%;
+    cursor: pointer;
+    background-color: #fff;
+  }
+  
+  .overlay button:hover {
+    background: #bbb;
+  }
 /*navbar is finish*/
 
 /*introduction content*/
@@ -116,14 +198,15 @@ h1,h2,h3,h4,h5,h6 {
 }
 .second-col {
     animation: slide 4s ease-in-out infinite;
+    margin-top: 20%;
+
 }
 
 .second-col h1 {
-    font: weight bolder;
+    font-weight: bolder;
     font-size: 3rem;
     position: relative;
     overflow: hidden;
-    margin-top: 20%;
 }
 
 @keyframes slide {
@@ -138,21 +221,29 @@ h1,h2,h3,h4,h5,h6 {
     }
 }
 
-.second-col > .btn {
-    padding: 15px 25px;
-    width: 30%;
-    transition: all .5s ease-in-out;
+.second-col-button > .btn {
+    padding: 0 30px;
+    position: relative;
+    line-height: 2.5;
+    text-align: center;
+    overflow: hidden;
     color: white;
     background-color: var(--gray-dark);
+    z-index: 1;
 }
 
-.second-col > .btn:hover {
-    background-color: var(--red);
-    transition-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1);
+.second-col-button > .btn::before{
+    content: '';
+    position: absolute;
+    right:100%;
+    width: 100%;
+    height: 100%;
+    transition: all .5s;
+    z-index: -1;
 }
 
-.second-col > .btn:hover {
-    color: white;
+.second-col-button > .btn:hover::before {
+    right: 0;
     background-color: var(--red);
     transition-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1);
 }
@@ -193,6 +284,10 @@ h1,h2,h3,h4,h5,h6 {
     margin-top: 10%;
 }
 
+@media screen {
+    
+}
+
 .zoom {
     overflow: hidden;
 }
@@ -210,13 +305,29 @@ h1,h2,h3,h4,h5,h6 {
 #forth-container {
     margin-top: 10%;
     width: 100%;
-    max-width: 100%;
+}
+
+#forth-container > .row {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 @media screen and (max-width:999px) {
-    #forth-container > .row > div:nth-child(2), div:nth-child(3) {
+    #forth-container > .row > .forth-col:nth-child(2), .forth-col:nth-child(3) {
         display: none;
     }
+    .forth-col > .bg-dark:nth-child(1) {
+        width: 90%;
+        margin-left: 7%;
+
+    }
+}
+
+.forth-col {
+    display: grid;
+    place-content: center;
 }
 
 .bg-dark  {
@@ -277,15 +388,28 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .ad-watch > .btn {
-    padding: 15px 25px;
-    width: 30%;
+    padding: 0 30px;
+    position: relative;
+    overflow: hidden;
+    line-height: 2.5;
     transition: all .5s ease-in-out;
     background-color: var(--gray2);
     color: white;
+    z-index: 1;
 }
 
-.ad-watch > .btn:hover {
-    color: white;
+.ad-watch > .btn::before {
+    content: '';
+    position: absolute;
+    right:100%;
+    width: 100%;
+    height: 100%;
+    transition: all .5s;
+    z-index: -1;
+}
+
+.ad-watch > .btn:hover::before {
+    right: 0;
     background-color: var(--red);
     transition-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1);
 }
@@ -307,12 +431,13 @@ h1,h2,h3,h4,h5,h6 {
     float: right;
 }
 
-.list-group-item {
-    opacity: .5;
+.footer-list .list-group-item {
     transition: all .5s ease-in-out;
+    border: none;
+    outline: none;
 }
 
-.list-group-item:hover {
+.footer-list  .list-group-item:hover {
     transform: translateX(20px);
     color: var(--red);
 }
