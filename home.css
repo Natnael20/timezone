@@ -1,0 +1,332 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Roboto",sans-serif;
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    --red: #ff2020;
+    --white: #fff;
+    --grey:#f0f0f2;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray2: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: "Josefin Sans",sans-serif;
+    color: #0b1c39;
+    margin-top: 0px;
+    font-style: normal;
+    font-weight: 500;
+    text-transform: normal;
+}
+/*navbar*/
+.nav-link{
+    font-family: "Josefin Sans",sans-serif;
+    font-size: 16px;
+    color: #141517;
+    font-weight: 600;
+    text-transform: capitalize;
+    -webkit-transition: all .3s ease-out 0s;
+    -moz-transition: all .3s ease-out 0s;
+    -ms-transition: all .3s ease-out 0s;
+    -o-transition: all .3s ease-out 0s;
+    transition: all .3s ease-out 0s;
+}
+.nav-item {
+    padding: 10px 5px;   
+    line-height: 2.5;
+}
+
+.drop-item {
+    line-height: normal;
+    text-decoration: none;
+    color: #000;
+    margin-left: 10px;
+    font-family: "Josefin Sans",sans-serif;
+    font-size: 16px;
+    color: #141517;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.dropdown:hover>.dropdown-menu {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.badge {
+    float: right;
+    height: 15px;
+}
+
+.badge span {
+    font-size: .7rem;
+    height: auto;
+
+}
+
+.dropdown-menu {
+    border-top: 3px solid red;
+}
+
+.right-content {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.nav-link:hover, .drop-item:hover{
+    color: #ff2020;
+    transition: all .3s ease-in-out;
+}
+/*navbar is finish*/
+
+/*introduction content*/
+/*-----------------------------------------------------------------*/
+#second-container {
+    background-color: var(--grey);
+    height: 100vh;
+    color: black;
+    overflow: hidden;
+}
+
+#second-container > .container {
+    width: 80%;
+    overflow: hidden;
+}
+.second-col {
+    animation: slide 4s ease-in-out infinite;
+}
+
+.second-col h1 {
+    font: weight bolder;
+    font-size: 3rem;
+    position: relative;
+    overflow: hidden;
+    margin-top: 20%;
+}
+
+@keyframes slide {
+    0%,100% {
+        transform: translateX(0);
+        animation-timing-function: steps(1, end); /* Snap to the 50% position */
+    }
+
+    50% {
+        transform: translateX(-100%);
+
+    }
+}
+
+.second-col > .btn {
+    padding: 15px 25px;
+    width: 30%;
+    transition: all .5s ease-in-out;
+    color: white;
+    background-color: var(--gray-dark);
+}
+
+.second-col > .btn:hover {
+    background-color: var(--red);
+    transition-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1);
+}
+
+.second-col > .btn:hover {
+    color: white;
+    background-color: var(--red);
+    transition-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1);
+}
+
+.second-col2 {
+    animation: zoom 6s linear infinite;
+    margin-top: 5%;
+}
+@keyframes zoom {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+        animation-timing-function: steps(1, end); /* Snap to the 50% position */
+    }
+}
+
+.second-col2 > img {
+    width: 100%;
+    max-width: 60%;
+}
+
+@media screen and (max-width:700px) {
+    #second-container {
+        height: auto;
+        overflow: hidden;
+    }
+
+    .second-col > .btn {
+        width: auto;
+    }
+}
+
+/*-------------------------------------------------------------------*/
+#third-container {
+    margin-top: 10%;
+}
+
+.zoom {
+    overflow: hidden;
+}
+
+.zoom img {
+    transition: transform 0.5s;
+}
+
+.zoom:hover img {
+    transform: scale(1.2); /* You can adjust the scale factor for the desired zoom level */
+}
+
+/*-------------------------------------------------------------------*/
+/*forth-container*/
+#forth-container {
+    margin-top: 10%;
+    width: 100%;
+    max-width: 100%;
+}
+
+@media screen and (max-width:999px) {
+    #forth-container > .row > div:nth-child(2), div:nth-child(3) {
+        display: none;
+    }
+}
+
+.bg-dark  {
+    position: relative;
+    overflow: hidden;
+}
+
+.bg-dark::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: .5;
+}
+
+/*-------------------------------------------------------------------*/
+
+#fifth-container {
+    margin-top: 10%;
+}
+
+.popular, .fifth-col {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.popular {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popular::before {
+    content: 'Add To Cart';
+    text-align: center;
+    line-height: 2.4;
+    color: white;
+    font-size: 1rem;
+    font-weight: 800;
+    position: absolute;
+    top: 370px;
+    width: 100%;
+    height: 20%;
+    background-color: var(--red);
+    transition: all .5s ease-in-out;
+
+}
+
+.fifth-col:hover > .popular::before {
+    top: 90%;
+}
+/*-------------------------------------------------------------------*/
+
+#sixth-container {
+    margin-top: 10%;
+}
+
+.ad-watch > .btn {
+    padding: 15px 25px;
+    width: 30%;
+    transition: all .5s ease-in-out;
+    background-color: var(--gray2);
+    color: white;
+}
+
+.ad-watch > .btn:hover {
+    color: white;
+    background-color: var(--red);
+    transition-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1);
+}
+
+/*-------------------------------------------------------------------*/
+
+#footer-container {
+    height: 70vh;
+    margin-top: 10%;
+}
+
+@media screen and (max-width:768px) {
+    #footer-container {
+        height: auto;
+    }
+}
+
+#social-container > div {
+    float: right;
+}
+
+.list-group-item {
+    opacity: .5;
+    transition: all .5s ease-in-out;
+}
+
+.list-group-item:hover {
+    transform: translateX(20px);
+    color: var(--red);
+}
+
+.social-icons a {
+    text-decoration: none;
+    color: black;
+    padding: 10px 20px;
+    transition: all .5s ease-in-out;
+}
+
+.social-icons a:hover {
+    transform:rotateY(360deg);
+    color: var(--red);
+}
+
+
