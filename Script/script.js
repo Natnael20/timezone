@@ -68,3 +68,21 @@ function decrease() {
     numberInput.value = currentValue - 1;
   }
 }
+
+
+function playVideo() {
+  var videoContainer = document.querySelector(".video-container");
+  var iframe = document.getElementById("youtubeVideo");
+  var playButton = document.querySelector(".play-button");
+
+  playButton.style.display="none";
+  videoContainer.classList.add("hide-before");
+
+
+  // Remove the thumbnail
+  videoContainer.removeChild(videoContainer.childNodes[1]);
+
+  // Update the z-index of the play button and start playing the video
+  playButton.style.zIndex = 0;
+  iframe.src = iframe.src.replace("autoplay=0", "autoplay=1");
+}

@@ -135,13 +135,15 @@
                 </div>
                 <div class="product1-details">
                     <div class="product1-price">
-                        <p>$360</p>
+                        <p>$45,743</p>
                     </div>
                     <div class="product1-quantity">
-                        <input type="number" name="number" id="number" value="1" style="width:100px;" class="p-3">
+                        <button class="btn add-btn">+</button>
+                        <input type="text" name="number" class="amount" value="1" readonly>
+                        <button class="btn subtract-btn">-</button>
                     </div>
                     <div class="product1-total">
-                        <p>$720</p>
+                        <p>$<span class="total-price">45,743</span></p>
                     </div>
                 </div>
             </div>
@@ -155,13 +157,15 @@
                 </div>
                 <div class="product1-details">
                     <div class="product1-price">
-                        <p>$360</p>
+                        <p>$45,743</p>
                     </div>
                     <div class="product1-quantity">
-                        <input type="number" name="number" id="number" value="1" style="width:100px;" class="p-3">
+                        <button class="btn add-btn">+</button>
+                        <input type="text" name="number" class="amount" value="1" readonly>
+                        <button class="btn subtract-btn">-</button>
                     </div>
                     <div class="product1-total">
-                        <p>$720</p>
+                        <p>$<span class="total-price">45,743</span></p>
                     </div>
                 </div>
             </div>
@@ -180,7 +184,7 @@
     <div class="container mt-5 d-flex justify-content-end w3-border-bottom w3-border-top">
         <div class="subtotal d-flex justify-content-between mt-5 gap-5">
             <p class="fw-bolder">Subtotal</p>
-            <p>$2160</p>
+            <p id="subtotalAmount">$91,486</p>
         </div>
     </div>
     <div class="container mt-5">
@@ -281,5 +285,6 @@
         </div>
     </div>
     <script src="/Script/script.js"></script>
+    <script src="/Script/cart.js"></script>
 </body>
 </html>
