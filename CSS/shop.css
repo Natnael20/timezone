@@ -40,12 +40,19 @@ h1,h2,h3,h4,h5,h6 {
 .second-container {
     background-color: var(--grey);
     height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-@media screen and (max-width:800px) {
+@media screen and (max-width:999px) {
     .second-container {
         height: 50vh;
     }
+}
+
+.shop-page h1 {
+    margin-top: 25%;
 }
 
 /*------------------------------------------------------------------------------*/
@@ -53,11 +60,6 @@ h1,h2,h3,h4,h5,h6 {
 .third-container {
     margin-top: 6%;
 }
-
-.shop-page {
-    margin-top: 25%
-}
-
 .new-products, .prices, .popular-products {
     cursor: pointer;
     text-align: center;

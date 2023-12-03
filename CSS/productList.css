@@ -40,6 +40,9 @@ h1,h2,h3,h4,h5,h6 {
 .second-container {
     background-color: var(--grey);
     height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 @media screen and (max-width:800px) {
@@ -48,14 +51,14 @@ h1,h2,h3,h4,h5,h6 {
     }
 }
 
+.proList-page h1 {
+    margin-top: 25%
+}
+
 /*------------------------------------------------------------------------------*/
 
 .third-container {
     margin-top: 6%;
-}
-
-.shop-page {
-    margin-top: 25%
 }
 
 .new-products, .prices, .popular-products {
