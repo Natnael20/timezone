@@ -30,7 +30,7 @@
                 <div class="collapse navbar-collapse mt-2 p-lg-1 justify-content-end" id="collapsibleNavbar">
                     <ul class="navbar-nav text-center">
                         <li class="nav-item mt-2">
-                            <a class="nav-link" href="home.html">Home</a>
+                            <a class="nav-link text-danger" href="home.html">Home</a>
                         </li>
                         <li class="nav-item mt-2">
                             <a class="nav-link" href="shop.html">Shop</a>
@@ -69,7 +69,7 @@
                             </div>
                         </li>
                         <li class="nav-item mt-2">
-                            <a class="nav-link" href="/cartlist">Contact</a>
+                            <a class="nav-link" href="contact.html">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -182,7 +182,7 @@
     <div class="container" id="fifth-container">
         <div class="fifth-intro text-center">
             <h1>Popular Items</h1>
-            <p>Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
+            <p>Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut<br>labore et dolore magna aliqua. Quis
                 ipsum suspendisse ultrices gravida.
             </p>
         </div>
@@ -250,16 +250,15 @@
         </div>
     </div>
     <div class="container-fluid video-container">
-        <div class="container">
-            <div class="thumbnail"></div>
-            <iframe id="youtubeVideo" src="https://www.youtube.com/embed/_yUzFtg201o?si=SBcLll4xK9IMuzcJ"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen></iframe>
-            <button class="play-button" onclick="playVideo()">
-                <i class="fa fa-play" aria-hidden="true"></i>
-            </button>
+        <div class="thumbnail">
         </div>
+        <iframe id="youtubeVideo" src="https://www.youtube.com/embed/_yUzFtg201o?si=SBcLll4xK9IMuzcJ"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+        <button class="play-button" onclick="playVideo()">
+            <i class="fa fa-play" aria-hidden="true"></i>
+        </button>
     </div>
     <div class="container" id="sixth-container">
         <div class="row d-flex align-items-center">
@@ -349,5 +348,4 @@
     </div>
     <script src="/Script/script.js"></script>
 </body>
-
 </html>
