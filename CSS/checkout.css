@@ -95,20 +95,12 @@ h1,h2,h3,h4,h5,h6 {
     line-height: 3;
 }
 
-.billing-form > input {
+.billing-form > input, .billing-name > input, .billing-email > input {
     border: none;
     outline:none;
+    border-bottom: 1px solid black;
+    width: 50%;
 }
-
-.billing-name, .billing-pho-email {
-    line-height: 3;
-}
-
-.billing-name input, .billing-pho-email input  {
-    border: none;
-    outline: none;
-}
-
 .checkout > .btn  {
     padding: 25px 30px;
     border: 1px solid var(--second);

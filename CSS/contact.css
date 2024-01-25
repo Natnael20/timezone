@@ -51,10 +51,14 @@ h1,h2,h3,h4,h5,h6 {
     }
 }
 
-.map iframe {
-    width: 100%;
+.map {
     padding: 0;
     margin: 0;
+}
+
+iframe {
+    width: 100%;
+
 }
 
 .contact-page h1 {
@@ -71,7 +75,6 @@ h1,h2,h3,h4,h5,h6 {
     grid-template-columns: auto auto;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    gap: 10px;
 }
 
 .location-logo i, .telephone-logo i, .envelope-logo i{
@@ -117,5 +120,12 @@ textarea {
 .contact-button {
     padding: 10px 25px;
     background-color: var(--red);
+}
+
+.contact-button a {
+    color: #fff;
+}
+
+.contact-button:hover > a {
     color: #000;
 }

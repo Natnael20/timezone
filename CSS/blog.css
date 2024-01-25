@@ -1,0 +1,217 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Roboto",sans-serif;
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    --red: #ff2020;
+    --white: #fff;
+    --grey:#f0f0f2;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray2: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: "Josefin Sans",sans-serif;
+    color: #0b1c39;
+    margin-top: 0px;
+    font-style: normal;
+}
+.second-container {
+    background-color: var(--grey);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width:999px) {
+    .second-container {
+        height: 50vh;
+    }
+}
+
+.about-page h1 {
+    margin-top: 25%;
+}
+
+.left-img {
+    position: relative;
+    overflow: visible;
+    display: flex;
+    justify-content: start;
+    align-items: end;
+}
+
+.left-img::before {
+    content: '15 \A Jan';
+    position: absolute;
+    background-color: var(--red);
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    width: 13%;
+    height: 2.5cm;
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10%;
+    white-space: pre-line; /* Add this line to allow line breaks */
+}
+
+.left-img:hover::before {
+    background-color: inherit;
+    color: var(--danger);
+}
+
+.user-response {
+    display: inline-flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.user-response p:nth-child(1):hover, .user-response p:nth-child(2):hover {
+    color: var(--red);
+}
+
+.search-section {
+    line-height: 3;
+}
+
+.search-input input[type="search"] {
+    padding: 10px;
+    border: none;
+    outline: none;
+    width: 100%;
+
+}
+
+.search-button {
+    color: #fff;
+    border: 1px solid var(--danger);
+    background-color: var(--red);
+}
+
+.search-button:hover {
+    border: 1px solid var(--danger);
+}
+
+/*right contents*/
+
+.categories, .recent-post, .Tag-clouds, .instagram-feeds, .news  {
+    margin-top: 25%;
+}
+
+.categories h4 {
+    padding: 15px;
+}
+
+.categories ul li {
+    border: none;
+    line-height: 3;
+}
+
+.categories ul li:hover{
+    color: var(--red);
+    cursor: pointer;
+}
+
+.recent-post {
+    padding: 15px;
+}
+
+.posts {
+    margin-top: 20%;
+}
+
+.post {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 5%;
+    gap: 10px;
+}
+.post-detail {
+    display: grid;
+    line-height: 1;
+    margin-left: 3%;
+    justify-content: center;
+}
+
+.post-detail p:nth-child(1):hover {
+    color: var(--red);
+    cursor: pointer;
+}
+
+.Tag-clouds ul {
+    display: grid;
+    grid-template-columns:auto auto auto;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 15%;
+}
+.Tag-clouds ul li {
+    border: none;
+    outline: none;
+    text-transform: capitalize;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.Tag-clouds ul li:hover {
+    background-color: var(--red);
+    color: #fff;
+}
+
+.instagram-feeds ul {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    flex-wrap: wrap;
+    margin-top: 15%;
+}
+
+.instagram-feeds ul li {
+    border: none;
+}
+
+.news {
+    display: grid;
+    line-height: 3;
+}
+ 
+.news input[type="email"]{
+    border: none;
+    outline: none;
+    padding: 10px;
+}
+
+.news button {
+    background-color: var(--red);
+    color: #fff;
+}
+
+.news button:hover {
+    border: 1px solid #ff2020;
+}
