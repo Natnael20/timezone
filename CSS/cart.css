@@ -96,7 +96,6 @@ h1,h2,h3,h4,h5,h6 {
     width: 43%;
 }
 
-
 .add-btn, .subtract-btn {
     padding: 10px 20px;
     font-size: 1.2rem;
@@ -178,6 +177,7 @@ h1,h2,h3,h4,h5,h6 {
 
 .form-check > #radio {
     border: 1px solid black;
+    accent-color: var(--second);
 }
 
 .updatedDetails-buttons > .btn, .proceed-buttons > .btn {

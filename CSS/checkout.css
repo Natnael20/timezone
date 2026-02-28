@@ -79,15 +79,13 @@ h1,h2,h3,h4,h5,h6 {
     outline: none;
     background: #fff;
     transition: .5s;
-}
-
-.apply {
     border-radius: 50px;
+    text-transform: capitalize;
 }
 
 .apply:hover {
     color:white;
-    background-color: var(--second);
+    background-color: var(--danger);
 }
 
 .billing-form {

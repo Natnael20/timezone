@@ -3,11 +3,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-body {
-    font-family: "Roboto",sans-serif;
-    font-weight: normal;
-    font-style: normal;
-}
 
 :root {
     --red: #ff2020;

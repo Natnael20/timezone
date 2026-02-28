@@ -86,3 +86,28 @@ function playVideo() {
   playButton.style.zIndex = 0;
   iframe.src = iframe.src.replace("autoplay=0", "autoplay=1");
 }
+
+
+// Define the IntersectionObserver callback function
+const observerCallback = (entries) => {
+  entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+          entry.target.classList.add('show');
+      } else {
+          entry.target.classList.remove('show');
+      }
+  });
+};
+
+// Create a new IntersectionObserver instance with the callback function
+
+// Query and observe elements with the corresponding classes
+const topElements = document.querySelectorAll('.top');
+const bottomElements = document.querySelectorAll('.bottom');
+const leftElements = document.querySelectorAll('.left');
+const rightElements = document.querySelectorAll('.right');
+
+topElements.forEach((el) => observer.observe(el));
+bottomElements.forEach((el) => observer.observe(el));
+leftElements.forEach((el) => observer.observe(el));
+rightElements.forEach((el) => observer.observe(el));

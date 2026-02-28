@@ -1,13 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Roboto:ital,wght@0,400;1,500&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-body {
-    font-family: "Roboto", sans-serif;
-    font-weight: normal;
-    font-style: normal;
 }
 
 :root {
@@ -38,7 +34,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: "Josefin Sans", sans-serif;
+    font-family: "Karla", sans-serif;
     color: #0b1c39;
     font-style: normal;
     font-weight: 500;
@@ -134,8 +130,7 @@ h6 {
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: rgb(0, 0, 0);
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: rgba(0, 0, 0, .8);
 }
 
 .overlay-content {
@@ -168,7 +163,6 @@ h6 {
     border-radius: 0%;
     width: 80%;
     border: none;
-    border-bottom: 1px solid white;
 }
 
 
@@ -250,25 +244,31 @@ h6 {
     line-height: 2.5;
     text-align: center;
     overflow: hidden;
-    color: white;
+    color:#0b1c39;
     background-color: var(--gray-dfark);
-    z-index: 1;
+    z-index: 2;
 }
 
-.second-col-button>.btn::before {
+.second-col-button .btn:hover {
+    color: #fff;
+}
+
+.second-col-button .btn::before {
     content: '';
     position: absolute;
     right: 100%;
     width: 100%;
     height: 100%;
+    color: white;
     transition: all .5s;
+    background-color: var(--red);
+    transition-timing-function: cubic-bezier(0.1, 0.7,1.0, 0.1);
     z-index: -1;
 }
 
 .second-col-button>.btn:hover::before {
     right: 0;
-    background-color: var(--red);
-    transition-timing-function: cubic-bezier(0.1, 0.7,1.0, 0.1);
+    color: #fff;
 }
 
 .second-col2 {
@@ -534,4 +534,40 @@ h6 {
 .social-icons a:hover {
     transform: rotateY(360deg);
     color: var(--red);
+}
+
+.top {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateY(100px);
+    transition: all 1.5s;
+}
+
+.right {
+    opacity: 0;
+    transition: all 1.5s ease-in-out;
+    transform: translateX(50px);
+}
+
+.left {
+    opacity: 0;
+    /* Initially set opacity to 0 */
+    transition: all 1.5s ease-in-out;
+    transform: translateX(-100px);
+    /* Apply translation */
+}
+
+.buttom {
+    opacity: 0;
+    /* Initially set opacity to 0 */
+    transition: all 1.5s ease-in-out;
+    filter: blur(5px);
+    transform: translateY(100px);
+    /* Apply translation */
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
 }
