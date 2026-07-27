@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="https://preview.colorlib.com/theme/timezone/assets/img/logo/logo.png.webp">
+    <link rel="icon" type="image/x-icon"
+        href="https://preview.colorlib.com/theme/timezone/assets/img/logo/logo.png.webp">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
@@ -14,10 +16,11 @@
     <link rel="stylesheet" href="assets/CSS/cart.css">
     <title>Cart</title>
 </head>
+
 <body>
     <div class="container-fluid" id="first-container">
         <nav class="navbar navbar-expand-sm">
-            <div class="container-fluid">
+            <div class="container-fluid" style="max-width: 1330px;">
                 <a class="navbar-brand" href="index.html"><img
                         src="https://preview.colorlib.com/theme/timezone/assets/img/logo/logo.png.webp"
                         class="img-fluid" alt="logo"></a>
@@ -95,83 +98,88 @@
             </div>
         </nav>
     </div>
-    <div class="container-fluid second-container">
+    <div class="container-fluid second-container d-flex justify-content-center align-items-center">
         <div class="cart-page">
             <h1 style="font-size: 70px; font-weight: 700;">Cart</h1>
         </div>
     </div>
-    <div class="container w3-animate-bottom mt-md-5 mt-sm-3">
-        <div class="info">
+    <div class="container mt-5">
+        <div class="info d-flex justify-content-between align-items-center w-100 flex-wrap">
             <div class="products">
                 <p>Product</p>
             </div>
             <div class="product-details">
-                <div class="price">
-                    <p>price</p>
-                </div>
-                <div class="quantity">
-                    <p>quantity</p>
-                </div>
-                <div class="total">
-                    <p>total</p>
+                <div class="product-wrapper d-inline-flex gap-5 ">
+                    <div class="price">
+                        <p>price</p>
+                    </div>
+                    <div class="quantity">
+                        <p>quantity</p>
+                    </div>
+                    <div class="total">
+                        <p>total</p>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="container">
-        <main>
-            <div class="product1 mt-5">
-                <div class="product1-img d-flex align-items-center gap-3">
+    
+        <div class="container product-container">
+            <div class="product1 d-flex flex-wrap justify-content-between align-items-center mt-5">
+                <div class="product1-img d-inline-flex align-items-center">
                     <img src="https://preview.colorlib.com/theme/timezone/assets/img/gallery/card1.png.webp" alt="product1"
-                        class="img-fluid w-25">
+                        class="img-fluid" width="100">
                     <div class="product1-titel">
                         <h5>Pixelstore Fresh Blackberry</h5>
                     </div>
                 </div>
-                <div class="product1-details">
-                    <div class="product1-price">
-                        <p>$45,743</p>
+                <div class="product1-details d-inline-flex gap-2 justify-content-end align-items-center">
+                    <div class="product1-price mt-3">
+                        <p>$<span class="total-price ">45,743</span></p>
                     </div>
-                    <div class="product1-quantity">
-                        <button class="btn add-btn">+</button>
-                        <input type="text" name="number" class="amount" value="1" readonly>
-                        <button class="btn subtract-btn">-</button>
+                    <div class="product1-quantity d-inline-flex justify-content-end align-items-center gap-1 h-100"
+                        style="width: 25%; min-width: min-content;">
+                        <button class="btn add-btn border border-black">+</button>
+                        <input type="text" name="number" class="amount border border-0 text-center fw-bold" 
+                            style="width: 100%; min-width: 30px; color: #000; background: transparent;" value="1">
+                        <button class="btn subtract-btn border border-black">-</button>
                     </div>
-                    <div class="product1-total">
+                    <div class="product1-total mt-3">
                         <p>$<span class="total-price">45,743</span></p>
                     </div>
                 </div>
             </div>
-            <div class="product1 mt-5">
-                <div class="product1-img d-flex align-items-center gap-3">
+            <div class="product1 d-flex flex-wrap justify-content-between align-items-center mt-5">
+                <div class="product1-img d-inline-flex align-items-center">
                     <img src="https://preview.colorlib.com/theme/timezone/assets/img/gallery/card2.png.webp" alt="product1"
-                        class="img-fluid w-25">
+                        class="img-fluid" width="100">
                     <div class="product1-titel">
                         <h5>Pixelstore Fresh Blackberry</h5>
                     </div>
                 </div>
-                <div class="product1-details">
-                    <div class="product1-price">
-                        <p>$45,743</p>
+                <div class="product1-details d-inline-flex gap-2 justify-content-end align-items-center">
+                    <div class="product1-price mt-3">
+                        <p>$<span class="total-price ">45,743</span></p>
                     </div>
-                    <div class="product1-quantity">
-                        <button class="btn add-btn">+</button>
-                        <input type="text" name="number" class="amount" value="1" readonly>
-                        <button class="btn subtract-btn">-</button>
+                    <div class="product1-quantity d-inline-flex justify-content-end align-items-center gap-1 h-100"
+                        style="width: 25%; min-width: min-content;">
+                        <button class="btn add-btn border border-black">+</button>
+                        <input type="text" name="number" class="amount border border-0 text-center fw-bold" 
+                            style="width: 100%; min-width: 30px; color: #000; background: transparent;" value="1">
+                        <button class="btn subtract-btn border border-black">-</button>
                     </div>
-                    <div class="product1-total">
+                    <div class="product1-total mt-3">
                         <p>$<span class="total-price">45,743</span></p>
                     </div>
                 </div>
             </div>
-        </main>
-        <div class="main-buttons mt-5 w3-animate-bottom">
-            <div class="inside-buttons">
-                <div class="proceed">
-                    <button class="btn">Update Cart</button>
-                </div>
-                <div class="update-products">
-                    <button class="btn">Close Coupon</button>
+            <div class="main-buttons mt-5 ">
+                <div class="inside-buttons d-flex justify-content-between">
+                    <div class="proceed">
+                        <button class="btn bg-danger text-light p-2 px-3">Update Cart</button>
+                    </div>
+                    <div class="update-products">
+                        <button class="btn bg-danger text-light p-2 px-3">Close Coupon</button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -199,16 +207,16 @@
                     <div class="val d-flex justify-content-end ">
                         <p>Free Shipping</p>
                         <div class="form-check">
-                            <input type="radio" id="radio"  name="optradio" value="option2">
+                            <input type="radio" id="radio" name="optradio" value="option2">
                         </div>
                     </div>
-                   <div class="val d-flex justify-content-end">
-                     <p>Flat Rate: $10.00
-                     </p>
-                     <div class="form-check">
-                         <input type="radio" id="radio"  name="optradio" value="option3">
-                     </div>
-                   </div>
+                    <div class="val d-flex justify-content-end">
+                        <p>Flat Rate: $10.00
+                        </p>
+                        <div class="form-check">
+                            <input type="radio" id="radio" name="optradio" value="option3">
+                        </div>
+                    </div>
                     <div class="val d-flex justify-content-end">
                         <p>Local Delivery: $2.00</p>
                         <div class="form-check">
@@ -219,20 +227,21 @@
             </div>
         </div>
         <div class="updatedDetails-buttons d-flex justify-content-end p-2">
-            <button class="btn">Updated-Details</button>
+            <button class="btn bg-danger text-light">Updated-Details</button>
         </div>
-        <div class="proceed-buttons d-flex justify-content-end p-2">
-            <button class="btn">Continue Shopping</button>
-            <button class="btn">Proceed To Checkout</button>
+        <div class="proceed-buttons d-flex justify-content-end gap-3 p-2">
+            <button class="btn bg-danger text-light">Continue Shopping</button>
+            <button class="btn bg-danger text-light">Proceed To Checkout</button>
         </div>
     </div>
-    <div class="container-fluid" id="footer-container">
+    <footer class="container-fluid" id="footer-container">
         <div class="container">
             <div class="row">
                 <div class="col-lg-3 col-sm-6 mt-5">
                     <img src="https://preview.colorlib.com/theme/timezone/assets/img/logo/logo.png.webp"
                         class="img-fluid" alt="logo">
-                    <p class="mt-5" style="opacity: .8;">Asorem ipsum adipolor sdit amet, consectetur adipisicing elitcf sed do eiusmod tem.
+                    <p class="mt-5" style="opacity: .8;">Asorem ipsum adipolor sdit amet, consectetur adipisicing elitcf
+                        sed do eiusmod tem.
                     </p>
                 </div>
                 <div class="col-lg-3 col-sm-6 mt-4">
@@ -268,9 +277,11 @@
                     </ul>
                 </div>
             </div>
-            <p class="mt-5">Copyright ©2023-<script>document.write(new Date().getFullYear())</script> All rights reserved</p>
+            <p class="mt-5">Copyright ©2023-
+                <script>document.write(new Date().getFullYear())</script> All rights reserved
+            </p>
         </div>
-    </div>
+    </footer>
     <div class="container" id="social-container">
         <div class="social-icons">
             <a href="#" target="_blank" class="fa fa-facebook"><span class="sr-only">Facebook</span></a>
@@ -283,4 +294,3 @@
     <script src="assets/Script/script.js"></script>
 </body>
 </html>
-

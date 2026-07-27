@@ -40,29 +40,25 @@ h1,h2,h3,h4,h5,h6 {
 .second-container {
     background-color: var(--grey);
     height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    min-height: 20px;
 }
 
-@media screen and (max-width:999px) {
-    .second-container {
-        height: 50vh;
-    }
-}
-
-.shop-page h1 {
-    margin-top: 25%;
-}
 
 /*------------------------------------------------------------------------------*/
 
 .third-container {
     margin-top: 6%;
 }
-.new-products, .prices, .popular-products {
+
+.new-products, .prices , .popular-products {
+    width: 100%;
+    min-width: fit-content;
+}
+.new-products h6, .prices h6, .popular-products h6 {
     cursor: pointer;
     text-align: center;
+    white-space: nowrap;
+    
 }
 
 @media screen and (max-width:800px) {
